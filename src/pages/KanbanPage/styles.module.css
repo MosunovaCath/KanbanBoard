@@ -1,0 +1,22 @@
+.kanbanBoard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.kanbanRow {
+  margin-top: 20px;
+  display: flex;
+  height: 93%;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+/* xl-размер (>=1200px) */
+/* CSS для >=1200px */
+
+/* lg-размер (<=1199px) */
+@media (max-width: 1199px) {
+  .kanbanRow {
+    flex-direction: column;
+    align-items: center;
+  }
+}

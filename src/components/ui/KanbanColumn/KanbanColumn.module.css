@@ -1,0 +1,113 @@
+.kanbanCol {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d6d1d1;
+  border-radius: 20px;
+  overflow: auto;
+  max-height: 88%;
+  background-color: #d6d1d1;
+  padding: 20px 7px;
+}
+.task {
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 7px;
+  padding: 10px 14px;
+  color: black;
+  text-decoration: none;
+  word-wrap: break-word;
+}
+.btn {
+  background: none;
+  border: none;
+  box-sizing: border-box;
+  color: #5e6c84;
+  cursor: pointer;
+  width: 102px;
+  padding: 4px 0;
+  font-size: 18px;
+  line-height: 21px;
+  border-radius: 5px;
+}
+.add:hover {
+  background: #fff;
+}
+.submit:hover {
+  background: rgba(0, 121, 191, 1);
+  color: #fff;
+}
+
+.backlogInput {
+  padding: 10px 14px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.selectMenu {
+  border-radius: 7px;
+  padding: 10px 0 10px 10px;
+  color: black;
+  text-decoration: none;
+  word-wrap: break-word;
+
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+.selectMenu:focus {
+  background-image: linear-gradient(45deg, green 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, green 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em,
+    calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+  border-color: green;
+  outline: 0;
+}
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+/* xl-размер (>=1200px) */
+/* CSS для >=1200px */
+
+/* lg-размер (<=1199px) */
+@media (max-width: 1199px) {
+  .kanbanCol {
+    width: 95%;
+    flex-direction: column;
+    margin-bottom: 30px;
+    min-height: 25%;
+  }
+}
+
+/* md-размер (<=991px) */
+@media (max-width: 991px) {
+  /* CSS для ширины от 768px до 991px */
+}
+
+/* sm-размер (<=768px) */
+@media (max-width: 767px) {
+  /* CSS для ширины от 576px до 767px */
+}
+
+/* xs-размер (<=575px) */
+@media (max-width: 575px) {
+}

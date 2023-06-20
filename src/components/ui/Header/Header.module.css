@@ -1,0 +1,59 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 103, 163, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: Roboto;
+  font-size: 28px;
+  line-height: 32px;
+  height: 10%;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.userBtn {
+  display: flex;
+  align-items: center;
+  width: 6.1%;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+}
+.dropdown {
+  position: absolute;
+  bottom: -195%;
+  left: -111%;
+  width: 200%;
+  background-color: #fff;
+  color: #000;
+  border-radius: 7px;
+  padding: 4px 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+/* xl-размер (>=1200px) */
+/* CSS для >=1200px */
+
+/* lg-размер (<=1199px) */
+@media (max-width: 1199px) {
+  .nav {
+    font-size: 20px;
+  }
+}
+
+/* md-размер (<=991px) */
+@media (max-width: 991px) {
+  .userBtn {
+    width: 11%;
+  }
+}
+
+/* xs-размер (<=575px) */
+@media (max-width: 575px) {
+  .nav {
+    font-size: 17px;
+  }
+  .userBtn {
+    width: 14%;
+  }
+}
